@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- materialize  -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script  defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="styles/style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="icon-container">
+            <div>
+                <img src="img/carnet.jpg" alt="" height="100px">
+            </div>
+            <div>
+                <h2>MY PORTFOLIO</h2>
+            </div>
+            <div>
+                <button>Change Theme</button>
+            </div>
+        </div>
+        <nav>
+            <div class="carousel">
+                hola
+                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
+                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
+                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
+                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
+                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
+            </div>
+        </nav>
+    </header>
+    agregar boton para tema (theme) oscuro y claro
+    <main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                duration: 200, //	Transition duration in milliseconds.
+                dist: -100, //	Perspective zoom. If 0, all items are the same size.
+                shift: 0, //	Set the spacing of the center item.
+                padding: 0, //	Set the padding between non center items.
+                numVisible: 5, //	Set the number of visible items.
+                fullWidth: false, //	Make the carousel a full width slider like the second example.
+                indicators: false, //	Set to true to show indicators.
+                noWrap: false, //	Don't wrap around and cycle through items.
+                onCycleTo: null, //	Callback for when a new slide is cycled to.
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@use 'var.scss' as v;
+
+
+
+body{
+    background-color: v.$color1;
+    font-size: 80px;
+    color: v.$color2;
+
+}
