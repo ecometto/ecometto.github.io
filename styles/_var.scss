@@ -1,3 +1,14 @@
 
 $color1: rgb(0,0,200);
-$color2 : red;
+
+@mixin centrar($justify: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin  reset () {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

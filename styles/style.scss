@@ -1,10 +1,35 @@
-@use 'var.scss' as v;
+@use "var.scss" as v;
 
+* {
+    @include v.reset();
+}
+.icon-container {
+    background-color: aqua;
+    padding: 0 20px;
+    @include v.centrar(space-between);
 
+    img {
+        height: 80px;
+        border-radius: 50%;
+    }
+    h2 {
+        font: {
+            family: Arial, Helvetica, sans-serif;
+            weight: 800;
+            size: 30px;
+        }
 
-body{
+    }
+
+    button {
+        padding: 5px;    
+        border-radius: 5px;
+        background-color: steelblue;
+        color: whitesmoke;
+        font-weight: 600;
+    }
+}
+
+body {
     background-color: v.$color1;
-    font-size: 80px;
-    color: v.$color2;
-
 }
