@@ -4,7 +4,7 @@
     @include v.reset();
 }
 .icon-container {
-    background-color: aqua;
+    background-color: v.$color1;
     padding: 0 20px;
     @include v.centrar(space-between);
 
@@ -18,18 +18,69 @@
             weight: 800;
             size: 30px;
         }
-
     }
 
-    button {
-        padding: 5px;    
+    .theme {
+        background-color: white;
+        width: 80px;
+        height: 50px;
+        @include v.centrar();
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
         border-radius: 5px;
-        background-color: steelblue;
-        color: whitesmoke;
-        font-weight: 600;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 0px;
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            transform: skewX(-58deg);
+        }
+
+        .textTheme {
+            z-index: 2;
+        }
+
+        .onOff {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background-color: silver;
+            border-radius: 10px;
+            cursor: pointer;
+            z-index: 2;
+
+            .ball {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 20px;
+                height: 20px;
+                background-color: black;
+                border-radius: 50%;
+            }
+        }
     }
 }
 
-body {
-    background-color: v.$color1;
+.carousel {
+    padding: 0px;
+    height: 200px;
+    margin: 0px;
+    .carousel-item{
+        @include v.centrar();
+        flex-direction: column;
+        cursor: pointer;
+
+        img{
+            width: 150px;
+            height: auto;
+        }
+    }
 }
+    

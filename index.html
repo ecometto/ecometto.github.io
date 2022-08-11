@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- materialize  -->
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
-        <script  defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="styles/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <title>My Portfolio</title>
 </head>
 
@@ -18,43 +18,124 @@
     <header>
         <div class="icon-container">
             <div>
-                <img src="img/carnet.jpg" alt="ecometto picture" >
+                <img src="img/carnet.jpg" alt="ecometto picture">
             </div>
             <div>
                 <h2>MY PORTFOLIO</h2>
             </div>
-            <div>
-                <button>Change Theme</button>
+            <div class="theme">
+                <p class="textTheme">Theme</p>
+                <div class="onOff">
+                    <div class="ball">
+                    </div>
+                </div>
             </div>
         </div>
-        <nav>
-            <div class="carousel">
-                hola
-                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
-                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
-                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
-                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
-                <a class="carousel-item" href="#"><img src="img/f1.jpg"></a>
+
+        <!-- <div class="carousel">
+            <a class="carousel-item" href="#">
+                <img src="IMG/carnet.jpg">
+                <div class="text-carousel-container">
+                    <p>Nota presentacion</p>
+                </div>
+            </a>
+            <a class="carousel-item" href="#two!"><img src="IMG/carnet.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="IMG/carnet.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="IMG/carnet.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="IMG/carnet.jpg"></a>
+          </div> -->
+
+        <div class="carousel">
+            <div class="carousel-item" href="#">
+                <div class="text-carousel-container">
+                    <p>Nota presentacion</p>
+                </div>
+                <img src="IMG/carnet.jpg">
             </div>
-        </nav>
+            <div class="carousel-item" href="#">
+                <div class="text-carousel-container">
+                    <p>SECCION 2</p>
+                </div>
+                <img src="IMG/f1.jpg">
+            </div>
+            <div class="carousel-item" href="#">
+                <div class="text-carousel-container">
+                    <p>SECCION 3</p>
+                </div>
+                <img src="IMG/f1.jpg">
+            </div>
+            <div class="carousel-item" href="#">
+                <div class="text-carousel-container">
+                    <p>SECCION 4</p>
+                </div>
+                <img src="IMG/f1.jpg">
+            </div>
+            <div class="carousel-item" href="#">
+                <div class="text-carousel-container">
+                    <p>SECCION 5</p>
+                </div>
+                <img src="IMG/f1.jpg">
+            </div>
+           
+        </div>
     </header>
-    agregar boton para tema (theme) oscuro y claro
+
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="section1">
+            <p id="presentacion-parrafo">Este sitio WEB es para presentar mi curriculum vitae y poner a su
+                consideración mis aptitudes profesionale, laborales y académicas. <br>
+                Mi nombre es <strong>Edgardo Daniel Cometto</strong> . Tengo 42 años. Soy casado, tengo 3 hijas, y vivo
+                en
+                Córdoba Capital.-
+                <br>
+                Egresé como Licenciado en Organización Industrial en la Universidad Tecnológica Nacional
+                (Facultad Regional Rafaela) en el año 2010.
+                <br>
+                A lo largo de mi carrera laboral he formado parte de distintos equipos de trabajo, en áreas
+                relacionadas a la logística, Compras, Planificación y Programación.
+                <br>
+                En los últimos 2 años he ampliado mis conocimientos a lo referido a programación y desarrollo de
+                sistemas informáticos, lo cual es una de mis mayores pasiones.
+                <br>
+                Mi objetivo profesional siempre fue poder formar parte de una empresa sólida, de
+                primer nivel, que valore y reconozca los aportes realizados por sus recursos humanos,
+                desarrollándome en un ambiente profesional en el que pueda interactuar con mis pares,
+                mejorando la eficiencia del grupo y acumulando nuevos conocimientos.
+                <br>
+                Sin más, y a la espera de su contacto para coordinar una entrevista, saludo muy atentamente.
+            </p>
+        </section>
+        <section class="section2">
+            <p>seccion de la nota 2 </p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, molestias eligendi! Officiis quo cum commodi ratione suscipit, aperiam vel aliquid?</p>
+        </section>
+        <section class="section3">
+            <p>seccion de la nota 3 </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, molestias eligendi! Officiis quo cum commodi ratione suscipit, aperiam vel aliquid?</p>
+        </section>
+        <section class="section4">
+            <p>seccion de la nota 4 </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, molestias eligendi! Officiis quo cum commodi ratione suscipit, aperiam vel aliquid?</p>
+        </section>
+        <section class="section5">
+            <p>seccion de la nota 5 </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum quas praesentium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, molestias eligendi! Officiis quo cum commodi ratione suscipit, aperiam vel aliquid?</p>
+        </section>
     </main>
 
 
+    <!-- script de materialize para carrusel  -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
-                duration: 200, //	Transition duration in milliseconds.
+                duration: 500, //	Transition duration in milliseconds.
                 dist: -100, //	Perspective zoom. If 0, all items are the same size.
-                shift: 0, //	Set the spacing of the center item.
+                shift: -20, //	Set the spacing of the center item.
                 padding: 0, //	Set the padding between non center items.
                 numVisible: 5, //	Set the number of visible items.
                 fullWidth: false, //	Make the carousel a full width slider like the second example.
@@ -65,6 +146,7 @@
         });
 
     </script>
+    <script defer src="js/main.js"></script>
 
 </body>
 

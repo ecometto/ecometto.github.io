@@ -5,7 +5,7 @@
 }
 
 .icon-container {
-  background-color: aqua;
+  background-color: rgb(220, 220, 220);
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -20,14 +20,64 @@
   font-weight: 800;
   font-size: 30px;
 }
-.icon-container button {
-  padding: 5px;
+.icon-container .theme {
+  background-color: white;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
   border-radius: 5px;
-  background-color: steelblue;
-  color: whitesmoke;
-  font-weight: 600;
+}
+.icon-container .theme::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  transform: skewX(-58deg);
+}
+.icon-container .theme .textTheme {
+  z-index: 2;
+}
+.icon-container .theme .onOff {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: silver;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+.icon-container .theme .onOff .ball {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
 }
 
-body {
-  background-color: rgb(0, 0, 200);
+.carousel {
+  padding: 0px;
+  height: 200px;
+  margin: 0px;
+}
+.carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.carousel .carousel-item img {
+  width: 150px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
