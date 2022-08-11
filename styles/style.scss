@@ -4,20 +4,34 @@
     @include v.reset();
 }
 .icon-container {
-    background-color: v.$color1;
+    background:linear-gradient(rgba(230,230,230,0.5),rgba(75, 116, 150,0.5)) ;
     padding: 0 20px;
     @include v.centrar(space-between);
+    height: 90px;
 
     img {
         height: 80px;
         border-radius: 50%;
     }
-    h2 {
+
+    h3{
+        margin: 5px;
+        font-weight: bold;
+        color: v.$blue;
+        text-shadow: 1px 1px 1px gray,
+        5px 5px 5px silver;
+        
+    }
+
+    .lic{
+        display: block;
+        text-align: center;
         font: {
             family: Arial, Helvetica, sans-serif;
             weight: 800;
-            size: 30px;
+            size: 20px;
         }
+        
     }
 
     .theme {
@@ -70,17 +84,42 @@
 
 .carousel {
     padding: 0px;
-    height: 200px;
+    height: 300px;
     margin: 0px;
     .carousel-item{
+        overflow: hidden;
         @include v.centrar();
         flex-direction: column;
         cursor: pointer;
+        margin: 10px;
+        padding: 10px;
+        background: radial-gradient(silver,rgb(207, 47, 159));
+
+        .text-carousel-container{
+            font-size: 18px;
+            font-weight: 700;
+        }
 
         img{
             width: 150px;
             height: auto;
+        margin: 10px;
+
         }
     }
 }
     
+main{
+    width: 70%;
+    margin: auto;
+    
+    section{
+        @include v.centrar();
+        text-align: center;
+
+        p{
+            margin: 20px;
+            line-height: 30px;
+        }
+    }
+}

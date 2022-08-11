@@ -29,7 +29,7 @@ cards.forEach((card, index)=>{
             secc.style.display = "none"
         })
         secciones[index].style.display = "block"
-
-
     })
+
+    secciones[0].style.display = "block"
 })
