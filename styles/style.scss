@@ -3,6 +3,13 @@
 * {
     @include v.reset();
 }
+
+body{
+    background-color: whitesmoke;
+    color: rgb(50,50,50);
+}
+
+//  ESTILOS DE ENCABEZADO 
 .icon-container {
     background:linear-gradient(rgba(230,230,230,0.5),rgba(75, 116, 150,0.5)) ;
     padding: 0 20px;
@@ -28,7 +35,7 @@
         text-align: center;
         font: {
             family: Arial, Helvetica, sans-serif;
-            weight: 800;
+            weight: 700;
             size: 20px;
         }
         
@@ -75,25 +82,32 @@
                 left: 0px;
                 width: 20px;
                 height: 20px;
-                background-color: black;
+                background-color: white;
                 border-radius: 50%;
             }
         }
     }
 }
 
+
+//  ESTILOS DE CARRUSEL 
 .carousel {
     padding: 0px;
-    height: 300px;
+    height: 280px;
     margin: 0px;
+
     .carousel-item{
+        text-align: center;
+        height: 90%;
         overflow: hidden;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background: radial-gradient(silver,rgb(207, 47, 159));
+        box-shadow: 10px 10px 10px gray;
         @include v.centrar();
         flex-direction: column;
         cursor: pointer;
-        margin: 10px;
-        padding: 10px;
-        background: radial-gradient(silver,rgb(207, 47, 159));
 
         .text-carousel-container{
             font-size: 18px;

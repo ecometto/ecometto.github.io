@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: whitesmoke;
+  color: rgb(50, 50, 50);
+}
+
 .icon-container {
   background: linear-gradient(rgba(230, 230, 230, 0.5), rgba(75, 116, 150, 0.5));
   padding: 0 20px;
@@ -26,7 +31,7 @@
   display: block;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 20px;
 }
 .icon-container .theme {
@@ -70,25 +75,29 @@
   left: 0px;
   width: 20px;
   height: 20px;
-  background-color: black;
+  background-color: white;
   border-radius: 50%;
 }
 
 .carousel {
   padding: 0px;
-  height: 300px;
+  height: 280px;
   margin: 0px;
 }
 .carousel .carousel-item {
+  text-align: center;
+  height: 90%;
   overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: radial-gradient(silver, rgb(207, 47, 159));
+  box-shadow: 10px 10px 10px gray;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  margin: 10px;
-  padding: 10px;
-  background: radial-gradient(silver, rgb(207, 47, 159));
 }
 .carousel .carousel-item .text-carousel-container {
   font-size: 18px;

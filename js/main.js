@@ -1,35 +1,52 @@
+
+// CONFIGURANDO BOTON DEL TEMA 
 const botonTheme = document.querySelector('.onOff')
 const ballTheme = document.querySelector('.ball')
+const body = document.body
 
 botonTheme.addEventListener('click', () => {
-
     if (ballTheme.style.left == "") {
         ballTheme.style.left = "20px"
-        ballTheme.style.backgroundColor = "white";
-
-        // agregar aqui el cambio de VideoColorSpace.apply. ver como 
-
+        ballTheme.style.backgroundColor = "black";
+        document.body.style.backgroundColor="black"
+        document.body.style.color="white"
     } else if (ballTheme.style.left == "20px") {
         ballTheme.style.left = ""
-        ballTheme.style.backgroundColor = "black";
-
-        // agregar aqui el cambio de VideoColorSpace.apply. ver como 
+        ballTheme.style.backgroundColor = "white";
+        document.body.style.backgroundColor="white"
+        document.body.style.color="black"
     }
 })
 
+// CONFIGURANDO CARRUSEL
 const cards = document.querySelectorAll('.carousel-item')
 const secciones = document.querySelectorAll('section')
 
-
-cards.forEach((card, index)=>{
+cards.forEach((card, index) => {
     secciones[index].style.display = "none"
 
-    card.addEventListener('click',()=>{
-        secciones.forEach(secc=>{
+    card.addEventListener('click', () => {
+        secciones.forEach(secc => {
             secc.style.display = "none"
         })
         secciones[index].style.display = "block"
     })
-
     secciones[0].style.display = "block"
+})
+
+// CONFIGURANDO LINKS A SECCIONES 
+const skillLink = document.querySelector('.skillLink')
+const projectsLink = document.querySelector('.projectsLink')
+
+skillLink.addEventListener('click', () => {
+    secciones.forEach(secc => {
+        secc.style.display = "none"
+    })
+    secciones[2].style.display = "block"
+})
+projectsLink.addEventListener('click', () => {
+    secciones.forEach(secc => {
+        secc.style.display = "none"
+    })
+    secciones[3].style.display = "block"
 })
