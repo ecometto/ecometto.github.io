@@ -150,13 +150,13 @@ main {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
-        width: calc(1000px);
+        width: calc(18*120px);
     }
 
     .slide {
         width: 120px;
         margin: 0px 10px;
-        animation: slide 4s linear infinite;
+        animation: slide 30s linear infinite;
 
         img {
             width: 120px;
@@ -169,7 +169,7 @@ main {
         transform: translateY(0);
     }
     100% {
-        transform: translateX(-2000px);
+        transform: translateX(calc(-9*120px));
     }
 }
 
