@@ -133,9 +133,10 @@ main {
     }
 }
 
-// ESTILOS SLIDER
+// ESTILOS SLIDER SKILLS
 .slider {
-    height: 100px;
+    box-sizing: border-box;
+    height: 80px;
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -149,18 +150,17 @@ main {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
-        width: 4000px;
-        width: calc(18 * 150px);
-        // background-color: aqua;
+        width: calc(1000px);
     }
 
     .slide {
-        width: 200px;
-        animation: slide 40s linear infinite;
+        width: 120px;
         margin: 0px 10px;
+        animation: slide 4s linear infinite;
+
         img {
-            width: 150px;
-            height: 80px;
+            width: 120px;
+            height: 60px;
         }
     }
 }
@@ -174,7 +174,6 @@ main {
 }
 
 //   CONFIGURACION PROYECTOS
-
 .project-container {
     width: 100%;
 

@@ -125,7 +125,8 @@ main section p {
 }
 
 .slider {
-  height: 100px;
+  box-sizing: border-box;
+  height: 80px;
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -139,18 +140,17 @@ main section p {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  width: 4000px;
-  width: 2700px;
+  width: 1000px;
 }
 .slider .slide {
-  width: 200px;
-  -webkit-animation: slide 40s linear infinite;
-          animation: slide 40s linear infinite;
+  width: 120px;
   margin: 0px 10px;
+  -webkit-animation: slide 4s linear infinite;
+          animation: slide 4s linear infinite;
 }
 .slider .slide img {
-  width: 150px;
-  height: 80px;
+  width: 120px;
+  height: 60px;
 }
 
 @-webkit-keyframes slide {
