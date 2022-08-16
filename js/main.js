@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-// CONFIGURACIÓN THEME 
-=======
 
 // CONFIGURANDO BOTON DEL TEMA 
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
 const botonTheme = document.querySelector('.onOff')
 const ballTheme = document.querySelector('.ball')
 const body = document.body
@@ -22,12 +18,18 @@ botonTheme.addEventListener('click', () => {
     }
 })
 
-<<<<<<< HEAD
 
-// CONFIGURACIÓN CARRUSEL 
-=======
+// CONFIGURANDO BOTON DE "IR ARRIBA" 
+const btnUp = document.getElementById('btnUp')
+window.addEventListener('scroll', ()=>{
+    if(scrollY>100){
+    btnUp.style.display="block"
+} else{
+    btnUp.style.display="none"
+    }
+})
+
 // CONFIGURANDO CARRUSEL
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
 const cards = document.querySelectorAll('.carousel-item')
 const secciones = document.querySelectorAll('section')
 
@@ -43,11 +45,9 @@ cards.forEach((card, index) => {
     secciones[0].style.display = "block"
 })
 
-<<<<<<< HEAD
 
-// CONFIGURACIONES VARIAS 
+// CONFIGURACIONES LINKS INTERNOS  
 const linkToSkill = document.querySelectorAll('.linkToSkill')
-
 linkToSkill.forEach(link => {
     addEventListener('click', (e) => {
         e.preventDefault()
@@ -56,7 +56,9 @@ linkToSkill.forEach(link => {
         })
         secciones[2].style.display = "block"
     })
-=======
+})
+
+
 // CONFIGURANDO LINKS A SECCIONES 
 const skillLink = document.querySelector('.skillLink')
 const projectsLink = document.querySelector('.projectsLink')
@@ -72,5 +74,4 @@ projectsLink.addEventListener('click', () => {
         secc.style.display = "none"
     })
     secciones[3].style.display = "block"
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
 })

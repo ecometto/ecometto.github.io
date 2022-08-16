@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- materialize  -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
@@ -15,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="icon-container">
             <div>
                 <img src="img/carnet2.jpg" alt="ecometto picture">
@@ -32,61 +34,57 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-=======
 
-        <button>
-            IR ARRIBA
-        </button>
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
 
         <div class="carousel">
             <div class="carousel-item" href="#">
                 <div class="text-carousel-container">
                     <p>PRESENTACION <br> (About me)</p>
                 </div>
-                <img src="IMG/about.png">
+                <img src="img/about.png">
             </div>
             <div class="carousel-item" href="#">
                 <div class="text-carousel-container">
                     <p>FORMACION y<br> EXPERIENCIA</p>
                 </div>
-                <img src="IMG/experience.png">
+                <img src="img/experience.png">
             </div>
             <div class="carousel-item" href="#">
                 <div class="text-carousel-container">
-<<<<<<< HEAD
-                    <p>SKILLS <br> (Soft and Hard)(</p>
-=======
                     <p>HARD and SOFT <br> SKILLS</p>
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
                 </div>
-                <img src="IMG/f1.jpg">
+                <img src="img/skills.png">
             </div>
             <div class="carousel-item" href="#">
                 <div class="text-carousel-container">
                     <p>PROJECTS <br> GALLERY</p>
                 </div>
-                <img src="IMG/f1.jpg">
+                <img src="img/projects.png">
             </div>
             <div class="carousel-item" href="#">
                 <div class="text-carousel-container">
-                    <p>SECCION 5</p>
+                    <p>CONTACT ME</p>
                 </div>
-                <img src="IMG/f1.jpg">
+                <img src="img/contact.png">
             </div>
 
         </div>
     </header>
 
+    <!-- boton flotante  -->
+    <div id="btnUp" style="display: none;">
+        <a class="flotante btn-large waves-effect blue" href="#header"><i class="material-icons">arrow_upward</i> Go
+            UP</a>
+    </div>
+
     <main>
-        <section class="section1">
-<<<<<<< HEAD
-            <div >
-                <img class="img-carnet" src="img/carnet2.jpg" alt="ECometto" >
+        <section class="presentacion">
+            <div>
+                <img class="img-carnet" src="img/carnet2.jpg" alt="ECometto">
             </div>
             <p>
-                Mi nombre es <strong>Edgardo Daniel Cometto</strong> . Tengo 42 años. Soy nacido en Esperanza (prov. Santa
+                Mi nombre es <strong>Edgardo Daniel Cometto</strong> . Tengo 42 años. Soy nacido en Esperanza (prov.
+                Santa
                 Fe, Argentina)
             </p>
             <p>
@@ -111,50 +109,12 @@
                 mejorando la eficiencia del grupo y acumulando nuevos conocimientos.
             </p>
             <p>
-                Sin más, y a la espera de su contacto para coordinar una entrevista, saludo muy atentamente.
+                Sin más, saludo muy atentamente.
             </p>
         </section>
-        <section class="section2">
+
+        <section class="experiencia">
             <h4>FORMACION Y EXPERIENCIA</h4>
-            <div>
-                <h5>ANTECEDENTES ACADEMICOS... </h5>
-                <p><b>Estudios Universitarios:</b> Licenciatura en Organización Industrial - UTN
-                    - Facultad Regional Rafaela <br>
-                    <b>Estudios Secundarios:</b> Técnico Electromecánico E.E.T. Don José de San Martín (Esperanza)
-=======
-            <div id="presentacion">
-                <p>Mi nombre es <strong>Edgardo Daniel Cometto</strong> . Tengo 42 años. </p>
-
-                <p>
-                    Soy casado, tengo 3 hijas, y vivo
-                    en
-                    Córdoba Capital.-
-                </p>
-
-                <p>
-                    Egresé como Licenciado en Organización Industrial en la Universidad Tecnológica Nacional
-                    (Facultad Regional Rafaela) en el año 2010.
-
-                </p>
-                <p>
-                    A lo largo de mi carrera laboral he formado parte de distintos equipos de trabajo, en áreas
-                    relacionadas a la logística, Compras, Planificación y Coordinacion.
-                </p>
-
-                <p>
-                    En los últimos 2 años he ampliado mis conocimientos a lo referido a programación y desarrollo de
-                    sistemas informáticos, lo cual es una de mis mayores pasiones.
-                </p>
-
-                <p>
-                    Mi objetivo profesional siempre fue poder formar parte de una empresa sólida, de
-                    primer nivel, que valore y reconozca los aportes realizados por sus recursos humanos,
-                    desarrollándome en un ambiente profesional en el que pueda interactuar con mis pares,
-                    mejorando la eficiencia del grupo y acumulando nuevos conocimientos.
-                </p>
-            </div>
-        </section>
-        <section class="section2">
             <div>
                 <h5>ANTECEDENTES ACADEMICOS... </h5>
                 <p><b>Estudios Universitarios:</b> <br> Licenciatura en Organización Industrial - UTN
@@ -162,13 +122,11 @@
                     <b>Estudios Secundarios:</b> <br> Técnico Electromecánico E.E.T. Don José de San Martín (Esperanza)
                 </p>
                 <p>
-
                     <b><u>CONOCIMIENTOS INFORMATICOS:</u></b> <br>
                     * Desarrollo web y programación <a href="#" class="skillLink">(ver card SKILLS)</a><br>
                     * Microsoft Office (Word, Excel, Power Point) <br>
                     * Programación excel y googleSheets (macros y appsheets) <br>
                     * Navegadores WEB, Correos electrónicos, otros
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
                 </p>
                 <p>
                     <b><u>IDIOMAS:</u></b> <br>
@@ -176,22 +134,9 @@
                 </p>
                 <p>
                     <b><u>CURSO Y CAPACITACIONES:</u></b> <br>
-<<<<<<< HEAD
                     Trabajo en Equipo, Negociación, Liderazgo, Comunicación eficiente, Metodologías Agiles
                 </p>
-                <P>
-                    <b><u>PROGRAMACIÓN:</u></b> <br>
-                    (Ver mas detalles en card <a class="linkToSkill" href="#"> "SKILLS"</a>))
-                </P>
-                <p>
-                    <b><u>CONOCIMIENTOS INFORMATICOS OFIMATICA:</u></b> <br>
-                    Microsoft Office (Word, Excel, Power Point), Programación excel y googleSheets (macros y appsheets),
-                    navegadores WEB, Correos electrónicos, Appsheet
-=======
-                    Trabajo en Equipo, Negociación, Liderazgo, Comunicación eficiente, Metodologías Agiles, otros. <br>
 
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
-                </p>
             </div>
 
             <br>
@@ -200,18 +145,12 @@
             <div>
                 <h5>ANTECEDENTES LABORALES... </h5>
                 <p>
-<<<<<<< HEAD
-                    <b>* PROYECTOS PERSONALES y LABORALES DE DESARROLLO WEB / PROGRAMACION <br>
-                        (desde mediados / fines 2020)</b> <br>
-                        (ver mas detalle en card <a class="linkToSkill" href="#"> "SKILLS"</a>)) <br>
-                        (ver mas detalle en card "PROYECTOS")
-=======
-                    <b>* PROYECTOS PERSONALES y LABORALES </b> <br> ✔ DESARROLLO WEB <br>
+                    <b>* PROYECTO PERSONAL </b> <br> ✔ DESARROLLO WEB <br>
                     ✔ PROGRAMACION EXCEL-APPSHEET <br>
                     ✔ OTROS DESARROLLOS <br>
 
                     <a href="#" class="projectsLink">(ver card PROYECTOS)</a><br>
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
+
                 </p>
                 <p>
                     <b>* VENG SA </b> <br>
@@ -230,15 +169,10 @@
                     ✔ Generación de Requerimientos de Compra de acuerdo a procedimientos <br>
                     ✔ Proyección / planificación de compras productivas y no-productivas <br>
                     ✔ Control de facturación y saldos de caja y cuentas corrientes de proveedores <br>
-                    ✔ Control, carga y autorización de gastos/compras por caja chica <br>
-<<<<<<< HEAD
-                    ✔ Conciliación y cierre diario de caja chica <br>
-=======
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
                     ✔ Presentación de informes varios a Gerencia
                 </p>
                 <p>
-                    <b>* INVEL Latinoamericana S.A. – Córdoba <br></b> Desde marzo 2007 hasta Octubre 2010 – Puesto:
+                    <b>* INVEL Latinoamericana S.A. - Córdoba <br></b> Desde marzo 2007 hasta Octubre 2010 - Puesto:
                     Responsable compras/logística<br>
                     ✔ Negociación, formación y evaluación de proveedores (productivos y de servicios) <br>
                     ✔ Selección y Logística de transportes nacionales e internacionales <br>
@@ -247,28 +181,6 @@
                     ✔ Control y autorización de documentos de Almacén <br>
                     ✔ Ciclado y auditroría de Stock. <br>
                     ✔ Planificación y gestión de de inventario
-<<<<<<< HEAD
-                </p>
-            </div>
-        </section>
-        <section class="section3" id="skills">
-            <h4>HARD AND SOFT SKILLS</h4>
-            <div class="hard-skill">
-                <div class="col-md-4">
-                    <h5>DISEÑO WEB</h5>
-                    <img src="img/disenoweb.png" alt="">
-                </div>
-                <div class="col-md-4">
-                    <h5>LIBRERIAS</h5>
-                    <img src="img/librerias.png" alt="">
-                </div>
-                <div class="col-md-4">
-                    <h5>PROGRAMACION</h5>
-                    <img src="img/programacion.png" alt="">
-                </div>
-            </div>
-            
-=======
                 </p>
                 <p>
                     <b>* PUNTOSECO – Córdoba <br></b> Desde Marzo 2006 hasta Diciembre 2006 – Puesto: Encargado de
@@ -291,7 +203,8 @@
                 </p>
             </div>
         </section>
-        <section class="section3">
+
+        <section class="skills">
             <h4>HARD AND SOFT SKILLS.. </h4>
 
             <div>
@@ -347,90 +260,123 @@
                     </div>
                 </div>
             </div>
-
-
->>>>>>> 60d18ffcbe12aaaa3470fbedd002041596b5fddc
         </section>
+
         <section class="projects">
             <div>
                 <h3>ALGUNOS PROYECTOS.. </h3>
 
                 <div class="project-container">
-                    <article>
-                        <H5>PROYECTO NOMBRE</H5>
-                        <div class="project-item">
-                            <div><img src="img/fondo.jpg" alt=""></div>
-                            <div>Descripcion del proyecto</div>
+                    <article class="section">
+                        <H5 class="">PROYECTOS / PRUEBAS REACT</H5>
+                        <div class="project-item row">
+                            <div class="col m2">
+                                <img class="responsive-img" src="img/fondo.jpg" alt="">
+                            </div>
+                            <div class="col m10 left-align">
+                                <p> <b> REACT HOOKS:</b> ReactRouter, UseState, UseEffect, useRef, Props, Fetch Api,
+                                    entre otros </p>
+                                <a href="../react/index.html"> Pruebas con REACT...</a>
+                            </div>
                         </div>
                     </article>
-                    <article>
-                        <H5>PROYECTO NOMBRE</H5>
-                        <div class="project-item">
-                            <div><img src="img/fondo.jpg" alt=""></div>
-                            <div>Descripcion del proyecto</div>
+                    <hr>
+                    <article class="section">
+                        <H5 class="">PROYECTOS / PROGRAMAS CON USO DE BASES DE DATOS. RESPONSIVE</H5>
+                        <div class="project-item row">
+                            <div class="col m2">
+                                <img class="responsive-img" src="img/fondo.jpg" alt="">
+                            </div>
+                            <div class="col m10 left-align">
+                                <p> <b> Tecnologías/ Lenguajes:</b> HTML, CSS, JS, BOOTSTRAP, JQUERY, AJAX, BOOTSTRAP,
+                                    PHP, MYSQL, DATATABLES</p>
+                                <p> <b>Nota:</b> Imágenes, datos y texto de prueba (NO REALES). </p>
+
+                                <a href="../proyectos/inventario/index.php"> Proyecto Sistema de Inventario...</a> <br>
+                                <a class="link-info m-2 p-2" href="../proyectos/agenda/index.php"> Agenda de
+                                    contactos...</a>
+                            </div>
                         </div>
                     </article>
-                    <article>
-                        <H5>PROYECTO NOMBRE</H5>
-                        <div class="project-item">
-                            <div><img src="img/fondo.jpg" alt=""></div>
-                            <div>Descripcion del proyecto</div>
+                    <hr>
+                    <article class="section">
+                        <H5 class="">PROYECTOS SINGLE PAGE</H5>
+                        <div class="project-item row">
+                            <div class="col m2">
+                                <img class="responsive-img" src="img/fondo.jpg" alt="">
+                            </div>
+                            <div class="col m10 left-align">
+                                <p>SINGLE PAGE. RESPONSIVE <br>
+                                    <b> Tecnologías/ Lenguajes:</b> HTML, CSS, JS, BOOTSTRAP, SCROLLREVEAL
+                                </p>
+                                <p> <b>Nota:</b> Imágenes, datos y texto de prueba (NO REALES). </p>
+
+                                <a href="../proyectos/panaderiaDC/index.html"> Proyecto Panaderia Dulce Catalina...</a>
+                                <br>
+                                <a href="../proyectos/adoquinesWEB/index.html"> Proyecto Prueba ADOQUINCOR...</a>
+                            </div>
                         </div>
                     </article>
-                    <article>
-                        <H5>PROYECTO NOMBRE</H5>
-                        <div class="project-item">
-                            <div><img src="img/fondo.jpg" alt=""></div>
-                            <div>Descripcion del proyecto</div>
-                        </div>
-                    </article>
-                    <article>
-                        <H5>PROYECTO NOMBRE</H5>
-                        <div class="project-item">
-                            <div><img src="img/fondo.jpg" alt=""></div>
-                            <div>Descripcion del proyecto</div>
-                        </div>
-                    </article>
-                    <article>
-                        <H5>PROYECTO NOMBRE</H5>
-                        <div class="project-item">
-                            <div><img src="img/fondo.jpg" alt=""></div>
-                            <div>Descripcion del proyecto</div>
-                        </div>
-                    </article>
+                    <hr>
 
                 </div>
 
 
-                <p><b>NOTA: </b> Esta página de proyectos es dinámica y muchos de los proyectos realizados en meses
+                <p class="section"><b>NOTA: </b> Esta página de proyectos es dinámica y muchos de los proyectos
+                    realizados en meses
                     anteriores van quedando "desactualizados" ya que diariamente voy adquiriendo nuevos conocimientos,
                     lo que me permite la mejora continua de la codificación. <br>
                 </p>
 
 
-                <div class="in-construccion">
-                    <div>
+                <div class="row valign-wrapper">
+                    <div class="col s4">
                         <script
                             src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                            
+
                         <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_hntzYU.json"
                             background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
                             <!--controls-->
                         </lottie-player>
                     </div>
 
-                    <div>
+                    <div class="col s8 ">
                         <h3>EN CONSTANTE ACTUALIZACION</h3>
                     </div>
                 </div>
             </div>
 
         </section>
-        <section class="section5">
-            <p>seccion de la nota 5 </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum quas praesentium.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, molestias eligendi! Officiis quo
-                cum commodi ratione suscipit, aperiam vel aliquid?</p>
+        <section class="contact">
+            <br>
+            <h5>CONTACT ME!!</h5>
+            <form action="../mailer.php" method="POST">
+                <div class="row m1">
+                    <div class="contact-form col s12 m8 offset-m2 indigo lighten-4">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label class="black-text text-lighten-3" for="first_name">Apellido y Nombre</label>
+                                <input id="ayn" name="ayn" type="text" class="validate">
+
+                                <div class="input-field col s12">
+                                    <label class="black-text text-lighten-3" for="mail">e-mail</label>
+                                    <input id="mail" name="mail" type="email" class="validate">
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <label class="black-text text-lighten-3" for="textarea1">Escriba su mensaje
+                                        aqui...</label>
+                                    <textarea id="textarea1" name="comentario" class="materialize-textarea"></textarea>
+                                </div>
+
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                                    <i class="material-icons right">send</i>
+                                  </button>
+                            </div>
+
+                        </div>
+                    </div>
+            </form>
         </section>
     </main>
 
@@ -450,6 +396,8 @@
                 noWrap: false, //	Don't wrap around and cycle through items.
                 onCycleTo: null, //	Callback for when a new slide is cycled to.
             });
+
+
         });
 
     </script>
