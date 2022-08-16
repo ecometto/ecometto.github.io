@@ -122,4 +122,67 @@ main section {
 main section p {
   margin: 20px;
   line-height: 30px;
+}
+
+.slider {
+  height: 100px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), white, rgba(0, 0, 0, 0.5));
+  display: flex;
+  align-items: center;
+}
+.slider .slide-track {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 4000px;
+  width: 2700px;
+}
+.slider .slide {
+  width: 200px;
+  -webkit-animation: slide 40s linear infinite;
+          animation: slide 40s linear infinite;
+  margin: 0px 10px;
+}
+.slider .slide img {
+  width: 150px;
+  height: 80px;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+.project-container {
+  width: 100%;
+}
+.project-container .project-item {
+  height: 200px;
+}
+.project-container img {
+  width: 200px;
+  float: left;
+}
+
+.in-construccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

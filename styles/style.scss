@@ -4,14 +4,14 @@
     @include v.reset();
 }
 
-body{
+body {
     background-color: whitesmoke;
-    color: rgb(50,50,50);
+    color: rgb(50, 50, 50);
 }
 
-//  ESTILOS DE ENCABEZADO 
+//  ESTILOS DE ENCABEZADO
 .icon-container {
-    background:linear-gradient(rgba(230,230,230,0.5),rgba(75, 116, 150,0.5)) ;
+    background: linear-gradient(rgba(230, 230, 230, 0.5), rgba(75, 116, 150, 0.5));
     padding: 0 20px;
     @include v.centrar(space-between);
     height: 90px;
@@ -21,16 +21,14 @@ body{
         border-radius: 50%;
     }
 
-    h3{
+    h3 {
         margin: 5px;
         font-weight: bold;
         color: v.$blue;
-        text-shadow: 1px 1px 1px gray,
-        5px 5px 5px silver;
-        
+        text-shadow: 1px 1px 1px gray, 5px 5px 5px silver;
     }
 
-    .lic{
+    .lic {
         display: block;
         text-align: center;
         font: {
@@ -38,7 +36,6 @@ body{
             weight: 700;
             size: 20px;
         }
-        
     }
 
     .theme {
@@ -89,51 +86,107 @@ body{
     }
 }
 
-
-//  ESTILOS DE CARRUSEL 
+//  ESTILOS DE CARRUSEL
 .carousel {
     padding: 0px;
     height: 280px;
     margin: 0px;
 
-    .carousel-item{
+    .carousel-item {
         text-align: center;
         height: 90%;
         overflow: hidden;
         margin: 10px;
         padding: 10px;
         border-radius: 5px;
-        background: radial-gradient(silver,rgb(207, 47, 159));
+        background: radial-gradient(silver, rgb(207, 47, 159));
         box-shadow: 10px 10px 10px gray;
         @include v.centrar();
         flex-direction: column;
         cursor: pointer;
 
-        .text-carousel-container{
+        .text-carousel-container {
             font-size: 18px;
             font-weight: 700;
         }
 
-        img{
+        img {
             width: 150px;
             height: auto;
-        margin: 10px;
-
+            margin: 10px;
         }
     }
 }
-    
-main{
+
+main {
     width: 70%;
     margin: auto;
-    
-    section{
+
+    section {
         @include v.centrar();
         text-align: center;
 
-        p{
+        p {
             margin: 20px;
             line-height: 30px;
         }
     }
+}
+
+// ESTILOS SLIDER
+.slider {
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), white, rgba(0, 0, 0, 0.5));
+    display: flex;
+    align-items: center;
+
+    .slide-track {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 4000px;
+        width: calc(18 * 150px);
+        // background-color: aqua;
+    }
+
+    .slide {
+        width: 200px;
+        animation: slide 40s linear infinite;
+        margin: 0px 10px;
+        img {
+            width: 150px;
+            height: 80px;
+        }
+    }
+}
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+//   CONFIGURACION PROYECTOS
+
+.project-container {
+    width: 100%;
+
+    .project-item {
+        height: 200px;
+    }
+
+    img {
+        width: 200px;
+        float: left;
+    }
+}
+.in-construccion {
+    @include v.centrar();
 }
