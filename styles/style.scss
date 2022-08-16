@@ -84,20 +84,24 @@
 
 .carousel {
     padding: 0px;
-    height: 300px;
+    height: 250px;
     margin: 0px;
+    position: relative;
     .carousel-item{
+        height: 90%;
         overflow: hidden;
         @include v.centrar();
         flex-direction: column;
+        border-radius: 10px;
         cursor: pointer;
-        margin: 10px;
-        padding: 10px;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
         background: radial-gradient(silver,rgb(207, 47, 159));
 
         .text-carousel-container{
             font-size: 18px;
             font-weight: 700;
+            text-align: center;
         }
 
         img{
@@ -120,6 +124,20 @@ main{
         p{
             margin: 20px;
             line-height: 30px;
+        }
+    .img-carnet{
+            border-radius: 50%;
+            transition: all 0.5s;
+            width: 200PX;
+
+            &:hover{
+                transform: scale(2);
+                border-radius: 0px;
+            }
+        }
+
+        .hard-skill{
+            @include v.centrar();
         }
     }
 }
