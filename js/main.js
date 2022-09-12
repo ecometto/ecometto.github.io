@@ -47,16 +47,16 @@ cards.forEach((card, index) => {
 
 
 // CONFIGURACIONES LINKS INTERNOS  
-const linkToSkill = document.querySelectorAll('.linkToSkill')
-linkToSkill.forEach(link => {
-    addEventListener('click', (e) => {
-        e.preventDefault()
-        secciones.forEach((seccion) => {
-            seccion.style.display = "none"
-        })
-        secciones[2].style.display = "block"
-    })
-})
+// const linkToSkill = document.querySelectorAll('.linkToSkill')
+// linkToSkill.forEach(link => {
+//     addEventListener('click', (e) => {
+//         e.preventDefault()
+//         secciones.forEach((seccion) => {
+//             seccion.style.display = "none"
+//         })
+//         secciones[2].style.display = "block"
+//     })
+// })
 
 
 // CONFIGURANDO LINKS A SECCIONES 

@@ -15,6 +15,13 @@ body {
   left: 10px;
 }
 
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
 .linkToSkill {
   cursor: pointer;
 }
@@ -144,7 +151,8 @@ main section {
   align-items: center;
   text-align: center;
 }
-main section p, main section li {
+main section p,
+main section li {
   margin: 20px;
   line-height: 30px;
 }
@@ -161,6 +169,12 @@ main section .hard-skill {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main section .project-container .img-project-container {
+  display: flex;
+}
+main section .project-container img {
+  min-width: 280px;
 }
 
 .slider {
