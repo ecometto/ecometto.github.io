@@ -8,10 +8,11 @@
     <!-- materialize  -->
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="styles/materialize.min.css">
+    <!-- Compiled and minified Materialize JavaScript -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <link rel="stylesheet" href="styles/style.css">
     <title>My Portfolio </title>
 </head>
@@ -20,10 +21,23 @@
     <header id="header">
         <div class="icon-container">
             <div class="img">
-                <img src="img/carnet2.jpg" alt="ecometto picture"> 
-                <i class="material-icons">cloud_download</i> Descargar CV
 
+                <img src="img/carnet2.jpg" alt="ecometto picture">
+                <div>
+                    <button type="submit" class="descargarCV" 
+                    onclick="window.open('https://www.ecometto.com.ar/new/CVresumido.pdf','_blank');">
+                    <i class="material-icons">cloud_download</i><br> 
+                        Descargar CV
+                    </button>
+
+
+                    <!-- <a class="download" target="_blank" href="CVresumido.pdf">
+                        <div><i class="material-icons">cloud_download</i></div>
+                        <div>Descargar CV</div>
+                    </a> -->
+                </div>
             </div>
+
             <div>
                 <h3>MY PORTFOLIO</h3>
                 <span class="lic">Lic. Edgardo Cometto</span>
@@ -37,46 +51,51 @@
             </div>
         </div>
 
-        <div class="carousel">
-            <div class="carousel-item" href="#">
-                <div class="text-carousel-container">
-                    <p>PRESENTACION <br> (About me)</p>
-                </div>
-                <img src="img/about.png">
-            </div>
-            <div class="carousel-item" href="#">
-                <div class="text-carousel-container">
-                    <p>FORMACION y<br> EXPERIENCIA</p>
-                </div>
-                <img src="img/experience.png">
-            </div>
-            <div class="carousel-item" href="#">
-                <div class="text-carousel-container">
-                    <p>HARD and SOFT <br> SKILLS</p>
-                </div>
-                <img src="img/skills.png">
-            </div>
-            <div class="carousel-item" href="#">
-                <div class="text-carousel-container">
-                    <p>PROJECTS <br> GALLERY</p>
-                </div>
-                <img src="img/projects.png">
-            </div>
-            <div class="carousel-item" href="#">
-                <div class="text-carousel-container">
-                    <p>CONTACT ME</p>
-                </div>
-                <img src="img/contact.png">
-            </div>
 
-        </div>
     </header>
+
+    <div class="carousel">
+
+        <button type="submit" class="atras" onclick="javascript:location.href='https://www.ecometto.com.ar/'">Old
+            Version</button>
+        <div class="carousel-item" href="#">
+            <div class="text-carousel-container">
+                <p>PRESENTACION <br> (About me)</p>
+            </div>
+            <img src="img/about.png">
+        </div>
+        <div class="carousel-item" href="#">
+            <div class="text-carousel-container">
+                <p>FORMACION y<br> EXPERIENCIA</p>
+            </div>
+            <img src="img/experience.png">
+        </div>
+        <div class="carousel-item" href="#">
+            <div class="text-carousel-container">
+                <p>HARD and SOFT <br> SKILLS</p>
+            </div>
+            <img src="img/skills.png">
+        </div>
+        <div class="carousel-item" href="#">
+            <div class="text-carousel-container">
+                <p>PROJECTS <br> GALLERY</p>
+            </div>
+            <img src="img/projects.png">
+        </div>
+        <div class="carousel-item" href="#">
+            <div class="text-carousel-container">
+                <p>CONTACT ME</p>
+            </div>
+            <img src="img/contact.png">
+        </div>
+
+    </div>
 
     <!-- boton flotante  -->
     <div id="btnUp" style="display: none;">
         <a class="flotante btn-large waves-effect blue" href="#header">
-            <i class="material-icons">arrow_upward</i> 
-        Go UP
+            <i class="material-icons">arrow_upward</i>
+            Go UP
         </a>
     </div>
 
@@ -85,6 +104,7 @@
             <div>
                 <img class="img-carnet" src="img/carnet2.jpg" alt="ECometto">
             </div>
+
             <p>
                 Mi nombre es <strong>Edgardo Daniel Cometto</strong> . Tengo 42 años. Soy nacido en Esperanza (prov.
                 Santa Fe, Argentina)
@@ -101,10 +121,15 @@
                 relacionadas a la logística, Compras, Planificación y Coordinacion.
             </p>
             <p>
-                En los últimos 2 años he ampliado mis conocimientos a lo referido a programación y desarrollo web, lo cual se ha convertido en una de mis mayores pasiones. Desde entonces diariamente he practicado, aprendido y y aplicado varios lenguajes los que detallo en <a class="linkToSkill"> mis skills</a>.
+                En los últimos 2 años he ampliado mis conocimientos a lo referido a programación y desarrollo web, lo
+                cual se ha convertido en una de mis mayores pasiones. Desde entonces diariamente he practicado,
+                aprendido y y aplicado varios lenguajes los que detallo en <a class="linkToSkill"> mis skills</a>.
             </p>
             <p>
-                Mi objetivo profesional actualmente es formar parte del área de <b>desarrollo de software</b>  en una empresa sólida, de primer nivel, que valore y reconozca los aportes realizados por sus recursos humanos, y que proponga nuevos retos cada día para poder demostrar mis aptitudes y actitudes, permitiéndome crecer profesionalmente.
+                Mi objetivo profesional actualmente es formar parte del área de <b>desarrollo de software</b> en una
+                empresa sólida, de primer nivel, que valore y reconozca los aportes realizados por sus recursos humanos,
+                y que proponga nuevos retos cada día para poder demostrar mis aptitudes y actitudes, permitiéndome
+                crecer profesionalmente.
             </p>
             <p>
                 Sin más, saludo muy atentamente.
@@ -206,36 +231,36 @@
 
             <div>
                 <h5>HARD SKILLS</h5>
-                
-                <p> 
-                    <ul>
-                        <li><b>Lenguajes de programación WEB: HTML, CSS, JAVASCRIPT. </b><br>
-                            Utilización de Librerías Javascript: Jquery, React, Datatables <br>
-                            Utilización de Librerías CSS: Bootstrap, SASS, materialize <br>
-                            AJAX + FETCH para peticiones a servidores y APIs
-                        </li>
-                        <li><b>Lenguajes de backend PHP. </b><br>
+
+                <p>
+                <ul>
+                    <li><b>Lenguajes de programación WEB: HTML, CSS, JAVASCRIPT. </b><br>
+                        Utilización de Librerías Javascript: Jquery, React, Datatables <br>
+                        Utilización de Librerías CSS: Bootstrap, SASS, materialize <br>
+                        AJAX + FETCH para peticiones a servidores y APIs
+                    </li>
+                    <li><b>Lenguajes de backend PHP. </b><br>
                         Programación Orientada a Objetos <br>
                         Conexiones y consultas a Bases de datos <br>
-                        Utilización patrón Modelo-Vista-Controlador 
-                        </li>
-                        <li><b>Bases de Datos MySQL</b> <br>
+                        Utilización patrón Modelo-Vista-Controlador
+                    </li>
+                    <li><b>Bases de Datos MySQL</b> <br>
                         Crear, modificar y eliminar Bases de datos y Tablas <br>
                         Importación y Exportación de datos <br>
                         Consultas intermedias/avanzadas (cláusulas y sentencias) <br>
                         Queries para CRUD.
-                        </li>
-                        <li><b>Sistemas de control de versiones GIT y GITHUB</b> <br>
+                    </li>
+                    <li><b>Sistemas de control de versiones GIT y GITHUB</b> <br>
                         Creacion, clonación de repositorios <br>
                         Push, Pull de actualizaciones <br>
-                        Branchs y Merges 
-                        </li>
-                        <li><b>Programación EXCEL (VBA) y Googlesheets (Appsheets)</b> <br>
+                        Branchs y Merges
+                    </li>
+                    <li><b>Programación EXCEL (VBA) y Googlesheets (Appsheets)</b> <br>
                         Programación Visual Basic for Application + Macros <br>
                         Utilización de Interfases de Formulario <br>
                         Creación de App moviles con Appsheets con resguardo en Sheets o Bases de Datos
-                        </li>
-                    </ul>
+                    </li>
+                </ul>
                 </p>
                 <hr>
                 <br>
@@ -283,72 +308,110 @@
 
         <section class="projects">
             <div>
-                <h3>ALGUNOS PROYECTOS.. </h3>
+                <h4>ALGUNOS PROYECTOS.. </h4>
 
                 <div class="project-container">
                     <article class="section">
-                        <H5 class="">PROYECTOS / PRUEBAS REACT</H5>
+                        <H5 class="">PROYECTOS / PRUEBAS REACT <br>(Proyectos 2022) </H5>
                         <div class="row">
-                            <div class="col m3 img-project-container">
+                            <div class="col l3 s12 img-project-container">
                                 <img class="responsive-img" src="img/react_fetch.png" alt="">
                             </div>
-                            <div class="col m6 center-align">
+                            <div class="col l6 s12 center-align description">
                                 <p> <b> REACT HOOKS:</b> ReactRouter, UseState, UseEffect, useRef, Props, Fetch Api,
                                     entre otros </p>
-                                <a href="../react/index.html"> Pruebas con REACT...</a>
+
+                                    <button type="submit" class="descargarCV" 
+                                    onclick="window.open('https://www.ecometto.com.ar/react/index.html','_blank');">
+                                        Pruebas con REACT...
+                                    </button>
+
+                                <!-- <a href="../react/index.html"> Pruebas con REACT...</a> -->
                             </div>
-                            <div class="col m3 img-project-container">
+                            <div class="col l3 s12 img-project-container">
                                 <img class="responsive-img" src="img/react_todoApp.png" alt="">
                             </div>
                         </div>
                     </article>
                     <hr>
                     <article class="section">
-                        <H5 class="">PROYECTOS / PROGRAMAS CON USO DE BASES DE DATOS. RESPONSIVE</H5>
+                        <H5 class="">PROYECTOS / PROGRAMAS CON USO DE BASES DE DATOS. RESPONSIVE <br>(Proyectos
+                            2021-2022) </H5>
                         <div class="row">
-                            <div class="col m3 img-project-container">
-                                <img class="responsive-img" src="img/react_fetch.png" alt="">
+                            <div class="col l3 s12 img-project-container">
+                                <img class="responsive-img" src="img/agenda.png" alt="">
                             </div>
-                            <div class="col m6 center-align">
+                            <div class="col l6 s12 center-align description">
                                 <p> <b> Tecnologías/ Lenguajes:</b> HTML, CSS, JS, BOOTSTRAP, JQUERY, AJAX, BOOTSTRAP,
                                     PHP, MYSQL, DATATABLES</p>
                                 <p> <b>Nota:</b> Imágenes, datos y texto de prueba (NO REALES). </p>
 
-                                <a href="../proyectos/inventario/index.php"> Proyecto Sistema de Inventario...</a> <br>
-                                <a class="link-info m-2 p-2" href="../proyectos/agenda/index.php"> Agenda de
-                                    contactos...</a>
+                                <button type="submit" class="descargarCV" 
+                                onclick="window.open('https://www.ecometto.com.ar/proyectos/inventario/index.php','_blank');">
+                                Proyecto Sistema de Inventario...
+                                </button>
+                                <br>
+                                <button type="submit" class="descargarCV" 
+                                onclick="window.open('https://www.ecometto.com.ar/proyectos/agenda/index.php','_blank');">
+                                Agenda de contactos...
+                                </button>
+
+                                <!-- <a href="../proyectos/inventario/index.php"> Proyecto Sistema de Inventario...</a> <br> -->
+                                <!-- <a class="link-info m-2 p-2" href="../proyectos/agenda/index.php"> Agenda de -->
+                                    <!-- contactos...</a> -->
                             </div>
-                            <div class="col m3 img-project-container">
-                                <img class="responsive-img" src="img/react_fetch.png" alt="">
+                            <div class="col l3 s12 img-project-container">
+                                <img class="responsive-img" src="img/inventario.png" alt="">
                             </div>
                         </div>
                     </article>
                     <hr>
                     <article class="section">
-                        <H5 class="">PROYECTOS SINGLE PAGE</H5>
+                        <H5 class="">PROYECTOS SINGLE PAGE <br>(Proyectos 2021) </H5>
                         <div class="row">
-                            <div class="col m3 img-project-container">
-                                <img class="responsive-img" src="img/react_fetch.png" alt="">
+                            <div class="col l3 s12 img-project-container">
+                                <img class="responsive-img" src="img/adoquincor.png" alt="">
                             </div>
-                            <div class="col m6 center-align">
+                            <div class="col l6 s12 center-align description">
                                 <p>SINGLE PAGE. RESPONSIVE <br>
                                     <b> Tecnologías/ Lenguajes:</b> HTML, CSS, JS, BOOTSTRAP, SCROLLREVEAL
                                 </p>
                                 <p> <b>Nota:</b> Imágenes, datos y texto de prueba (NO REALES). </p>
 
-                                <a href="../proyectos/panaderiaDC/index.html"> Proyecto Panaderia Dulce Catalina...</a>
+
+                                <button type="submit" class="descargarCV" 
+                                onclick="window.open('https://www.ecometto.com.ar/proyectos/panaderiaDC/index.html','_blank');">
+                                Proyecto Panaderia Dulce Catalina...
+                                </button>
                                 <br>
-                                <a href="../proyectos/adoquinesWEB/index.html"> Proyecto Prueba ADOQUINCOR...</a>
+                                <button type="submit" class="descargarCV" 
+                                onclick="window.open('https://www.ecometto.com.ar/proyectos/adoquinesWEB/index.html','_blank');">
+                                Proyecto Prueba ADOQUINCOR...
+                                </button>
+                                <br>
+                                <button type="submit" class="descargarCV" 
+                                onclick="window.open('https://www.ecometto.com.ar/proyectos/lubricentro/index.html','_blank');">
+                                Proyecto LUBRICENTRO CARLOS PAZ...
+                                </button>
+
+
+
+
+                                <!-- <a href="../proyectos/panaderiaDC/index.html"> Proyecto Panaderia Dulce Catalina...</a> -->
+                                <br>
+                                <!-- <a href="../proyectos/lubricentro/index.html"> Proyecto Prueba ADOQUINCOR...</a> -->
+                                <br>
+                                <!-- <a href="../proyectos/adoquinesWEB/index.html"> Proyecto LUBRICENTRO CARLOS PAZ...</a> -->
                             </div>
-                            <div class="col m3 img-project-container">
-                                <img class="responsive-img" src="img/react_fetch.png" alt="">
+                            <div class="col l3 s12 img-project-container">
+                                <img class="responsive-img" src="img/lubricentro.png" alt="">
                             </div>
+
                         </div>
                     </article>
-                    <hr>
-
                 </div>
 
+                <hr>
 
                 <p class="section"><b>NOTA: </b> Esta página de proyectos es dinámica y muchos de los proyectos
                     realizados en meses
@@ -357,8 +420,12 @@
                 </p>
 
 
+                <div class=" ">
+                    <h4>EN CONSTANTE ACTUALIZACION</h4>
+                </div>
+
                 <div class="row valign-wrapper">
-                    <div class="col s4">
+                    <div class="">
                         <script
                             src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
@@ -367,10 +434,6 @@
                             <!--controls-->
                         </lottie-player>
                     </div>
-
-                    <div class="col s8 ">
-                        <h3>EN CONSTANTE ACTUALIZACION</h3>
-                    </div>
                 </div>
             </div>
 
@@ -378,6 +441,10 @@
         <section class="contact">
             <br>
             <h5>CONTACT ME!!</h5>
+
+            <p>E-mail:
+                <a href="mailto:ecometto@hotmail.com">ecometto@hotmail.com</a>
+            </p>
             <form action="../mailer.php" method="POST">
                 <div class="row m1">
                     <div class="contact-form col s12 m8 offset-m2 indigo lighten-4">
@@ -399,7 +466,7 @@
 
                                 <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
                                     <i class="material-icons right">send</i>
-                                  </button>
+                                </button>
                             </div>
 
                         </div>

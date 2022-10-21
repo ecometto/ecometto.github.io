@@ -7,19 +7,13 @@
 body {
   background-color: whitesmoke;
   color: rgb(50, 50, 50);
+  text-align: center;
 }
 
 .flotante {
   position: fixed;
   bottom: 10px;
   left: 10px;
-}
-
-.img{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px
 }
 
 .linkToSkill {
@@ -50,15 +44,37 @@ body {
   align-items: center;
   height: 90px;
 }
+.icon-container .img {
+  display: flex;
+  align-items: center;
+}
 .icon-container img {
+  margin-right: 5px;
   height: 80px;
   border-radius: 50%;
 }
+@media (max-width: 600px) {
+  .icon-container img {
+    display: none;
+  }
+}
+.icon-container .descargarCV {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
 .icon-container h3 {
+  font-size: 30px;
   margin: 5px;
   font-weight: bold;
   color: steelblue;
   text-shadow: 1px 1px 1px gray, 5px 5px 5px silver;
+}
+@media (max-width: 600px) {
+  .icon-container h3 {
+    font-size: 20px;
+  }
 }
 .icon-container .lic {
   display: block;
@@ -79,6 +95,11 @@ body {
   overflow: hidden;
   position: relative;
   border-radius: 5px;
+}
+@media (max-width: 320px) {
+  .icon-container .theme {
+    display: none;
+  }
 }
 .icon-container .theme::after {
   content: "";
@@ -116,6 +137,15 @@ body {
   height: 250px;
   position: relative;
 }
+.carousel .atras {
+  background-color: orange;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .carousel .carousel-item {
   display: flex;
   justify-content: center;
@@ -129,6 +159,13 @@ body {
   flex-direction: column;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .carousel .carousel-item {
+    height: 240px;
+    width: 150px;
+  }
 }
 .carousel .carousel-item .text-carousel-container {
   font-size: 18px;
@@ -170,11 +207,32 @@ main section .hard-skill {
   justify-content: center;
   align-items: center;
 }
+main section .project-container {
+  text-align: center;
+}
 main section .project-container .img-project-container {
   display: flex;
 }
+main section .project-container .description {
+  background-color: rgba(203, 204, 206, 0.2);
+  min-height: 150px;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0px;
+}
+main section .project-container .description button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  margin: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
 main section .project-container img {
-  min-width: 280px;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
 }
 
 .slider {

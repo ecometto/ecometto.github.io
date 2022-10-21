@@ -42,22 +42,9 @@ cards.forEach((card, index) => {
         })
         secciones[index].style.display = "block"
     })
+
     secciones[0].style.display = "block"
 })
-
-
-// CONFIGURACIONES LINKS INTERNOS  
-// const linkToSkill = document.querySelectorAll('.linkToSkill')
-// linkToSkill.forEach(link => {
-//     addEventListener('click', (e) => {
-//         e.preventDefault()
-//         secciones.forEach((seccion) => {
-//             seccion.style.display = "none"
-//         })
-//         secciones[2].style.display = "block"
-//     })
-// })
-
 
 // CONFIGURANDO LINKS A SECCIONES 
 const skillLink = document.querySelector('.skillLink')

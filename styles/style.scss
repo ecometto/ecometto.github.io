@@ -7,6 +7,7 @@
 body {
     background-color: whitesmoke;
     color: rgb(50, 50, 50);
+    text-align: center;
 }
 
 .flotante {
@@ -42,16 +43,38 @@ body {
     @include v.centrar(space-between);
     height: 90px;
 
+    .img {
+        display: flex;
+        align-items: center;
+    }
+
     img {
+        margin-right: 5px;
         height: 80px;
         border-radius: 50%;
+
+        @media (max-width:600px) {
+            display: none;
+        }
+    }
+
+    .descargarCV{
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
     }
 
     h3 {
+        font-size: 30px;
         margin: 5px;
         font-weight: bold;
         color: v.$blue;
         text-shadow: 1px 1px 1px gray, 5px 5px 5px silver;
+
+        @media (max-width:600px) {
+            font-size: 20px;
+        }
     }
 
     .lic {
@@ -75,6 +98,10 @@ body {
         overflow: hidden;
         position: relative;
         border-radius: 5px;
+
+        @media (max-width:320px) {
+            display: none;
+        }
 
         &::after {
             content: "";
@@ -118,6 +145,17 @@ body {
     height: 250px;
     position: relative;
 
+    .atras {
+        background-color: orange;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
     .carousel-item {
         @include v.centrar();
         height: 240px;
@@ -129,6 +167,14 @@ body {
         flex-direction: column;
         border-radius: 10px;
         cursor: pointer;
+        font-size: 20px;
+
+        @media (max-width:600px) {
+            height: 240px;
+            width: 150px;
+        }
+
+
 
         .text-carousel-container {
             font-size: 18px;
@@ -175,14 +221,39 @@ main {
         }
 
         .project-container {
-            .img-project-container{
+            text-align: center;
+
+            .img-project-container {
                 display: flex;
+
             }
-                img{
-                    min-width: 280px;
+
+            .description {
+                background-color: rgba(203, 204, 206, 0.2);
+                min-height: 150px;
+                width: 100%;
+                padding: 15px;
+                margin: 15px 0px;
+
+                button{
+                    // border: solid 1px rgba(0, 0, 0, 0.4);
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    padding: 3px;
+                    margin: 3px;
+                    border-radius: 2px;
+                    cursor: pointer;
                 }
             }
-           
+
+            img {
+                margin: auto;
+                width: 100%;
+                max-width: 300px;
+                height: 150px;
+            }
+        }
+
     }
 }
 
