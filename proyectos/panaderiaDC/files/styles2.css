@@ -1,0 +1,252 @@
+/*estilos generales*/
+html{
+	background-color: #fad7a0;
+	font-size: 16px;
+	padding: auto;
+	border:solid ;
+}
+
+body{
+	color:  #1c2833 ;
+	margin: auto;
+	width: 90%;
+	background-image: url("img/fondo.jpg");
+	background-attachment: fixed;
+	font-size: 1.05em;
+	min-width: 300px;
+}
+
+
+.logo{
+	background-color: gray;
+	padding: 0.35px;
+}
+
+#opciones, .menu p{
+	display: none;
+}
+
+.menu li, .enlaces li{
+	display: inline;
+	padding: 0.625em;
+	margin: auto;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	background-color: gray;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.imagen1{
+	margin: auto;
+	width: auto;
+	/*max-height: 250px;*/
+	height: 200px;
+	text-align: center;
+}
+
+.promociones{
+	float: left;
+	width: 30%;
+
+}
+.promociones img{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+
+h3{
+	font-size: 1.25em;
+	font-weight: bold;
+	color: black;
+	text-decoration: underline solid 2px;
+}
+
+h4{
+	font-size: 1.15em;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 2em;	
+	text-decoration: underline 2px gray;
+}
+
+.fotos{
+	float: right;
+	margin: 0.625em;
+	width: 8em;
+}
+
+.sucursales a{
+	display: block;
+}
+.uno-tres img{
+	float: left;
+	margin: 0.625em;
+	width: 20%;
+}
+
+p{
+	text-align: justify;
+	margin: 0.625em;
+}
+
+.enlaces li{
+	display: inline-block;
+}
+
+
+.pie2{
+	background-color: gray;
+	/*padding-left: 0.65em;*/
+	width: 100%;
+	margin:0;
+}
+
+.formulario h2, .formulario input, label, textarea, #submit{
+	display: block;
+	margin: auto;
+	text-align: center
+
+}
+
+#submit{
+	width: 80px; height: 30px; background-color: gray;
+	margin-top: 10px; margin-bottom: 10px;
+}
+.formulario input{
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+input:focus, textarea:focus{
+	background-color: #ccc;
+}
+
+fieldset{
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #000;
+	border-radius: 40px;
+}
+
+textarea{
+	width: 50%;
+	height: 100px;
+
+
+
+}
+
+
+@media (max-width: 900px) and (min-width: 711px) {
+
+html{
+	font-size: 15px;
+	padding: auto;
+}
+	
+
+.fotos{
+	float: right;
+	margin: 0.625em;
+	width: 7em;
+}
+
+.uno-tres img{
+	float: left;
+	margin: 0.625em;
+	width: 30%;
+}
+
+
+.imagen1{
+	margin: auto;
+	width: auto;
+	/*max-height: 250px;*/
+	height: 180px;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 710px) {
+
+html{
+	font-size: 13px;
+	padding: auto;
+}
+
+#opciones, .menu p{
+	display: block;
+	font-size: 3.5em;
+	text-align: right;
+	margin:0px;
+}
+
+.menu p{
+	text-align: right;
+	font-size: 2em;
+}
+.menu li{
+	display: none;
+	padding: 0.625em;
+	text-align: right; 
+}
+
+.menu:hover li{
+	display: block;
+	padding: 0.625em;
+	margin: auto;
+}
+
+.promociones{
+	float: none;
+	display: inline;
+	margin-top: 3em;
+	margin-bottom: 10em;
+
+	width: 100%;
+}
+
+.promociones .promo{
+	float: left;
+	width: 33%;
+	text-align: center;
+
+}
+
+
+.fotos{
+	float: right;
+	margin: 0.625em;
+	width: 7em;
+}
+
+.uno-tres img{
+	float: left;
+	margin: 0.625em;
+	width: 30%;
+}
+
+.enlaces li{
+	display: block;
+}
+
+.imagen1{
+	margin: auto;
+	width: auto;
+	/*max-height: 250px;*/
+	height: 150px;
+}
+}

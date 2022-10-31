@@ -1,0 +1,51 @@
+html {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    height: 70px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.fondo {
+    background: linear-gradient(to right, rgb(49, 49, 122), GREY);
+    margin: 0px;
+}
+
+
+.botonP {
+    margin-top: 15%;
+    float: left;
+    margin-left: 2%;
+}
+
+.botonN {
+    margin-top: 15%;
+    float: right;
+    margin-right: 2%;
+}
+
+.textoSlider {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-weight: bold;
+    color: rgb(31, 31, 119);
+    font-size: 3vw;
+}
+
+.bg-navbar {
+    background: linear-gradient(left, blue, white);
+}
+
+a {
+    color: blue;
+}

@@ -280,9 +280,6 @@ main section .project-container img {
   }
 }
 
-form .contact-form {
-  border-radius: 10px;
-}
-form .row {
-  padding: 20px;
+ul, li {
+  text-align: start;
 }/*# sourceMappingURL=style.css.map */
