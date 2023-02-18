@@ -1,0 +1,43 @@
+:root {
+    --primario: blue;
+}
+
+main{
+    position: relative;
+}
+.map-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.boton {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 50;
+    background-color: var(--primario);
+    border-radius: 5px;
+    border: solid 1px black;
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.data-container{
+    margin-top: 200px;
+}
+
+.boton-posicion{
+    background-color: var(--primario);
+    border-radius: 5px;
+    color:white;
+}
