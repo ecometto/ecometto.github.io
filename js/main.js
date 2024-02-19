@@ -8,24 +8,24 @@ botonTheme.addEventListener('click', () => {
     if (ballTheme.style.left == "") {
         ballTheme.style.left = "20px"
         ballTheme.style.backgroundColor = "black";
-        document.body.style.backgroundColor="black"
-        document.body.style.color="white"
+        document.body.style.backgroundColor = "black"
+        document.body.style.color = "white"
     } else if (ballTheme.style.left == "20px") {
         ballTheme.style.left = ""
         ballTheme.style.backgroundColor = "white";
-        document.body.style.backgroundColor="white"
-        document.body.style.color="black"
+        document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
     }
 })
 
 
 // CONFIGURANDO BOTON DE "IR ARRIBA" 
 const btnUp = document.getElementById('btnUp')
-window.addEventListener('scroll', ()=>{
-    if(scrollY>100){
-    btnUp.style.display="block"
-} else{
-    btnUp.style.display="none"
+window.addEventListener('scroll', () => {
+    if (scrollY > 100) {
+        btnUp.style.display = "block"
+    } else {
+        btnUp.style.display = "none"
     }
 })
 
@@ -47,15 +47,18 @@ cards.forEach((card, index) => {
 })
 
 // CONFIGURANDO LINKS A SECCIONES 
-const skillLink = document.querySelector('.skillLink')
+const skillLink = document.querySelectorAll('.skillLink')
 const projectsLink = document.querySelector('.projectsLink')
 
-skillLink.addEventListener('click', () => {
-    secciones.forEach(secc => {
-        secc.style.display = "none"
-    })
-    secciones[2].style.display = "block"
-})
+skillLink.forEach(link =>
+    link.addEventListener('click', () => {
+        const secciones = document.querySelectorAll('section')
+        secciones.forEach(secc => {
+            secc.style.display = "none"
+        })
+        secciones[2].style.display = "block"
+    }))
+
 projectsLink.addEventListener('click', () => {
     secciones.forEach(secc => {
         secc.style.display = "none"
