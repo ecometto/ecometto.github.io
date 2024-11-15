@@ -128,7 +128,7 @@ function generarRespuesta(answers) {
                             
                             </div>
                             
-                            <h5><a href="./index.php">Volver a Inicio</a></h5>
+                            <h5><a href="./index.html">Volver a Inicio</a></h5>
                         
                         `
 

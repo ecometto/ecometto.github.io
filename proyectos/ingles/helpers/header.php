@@ -1,7 +1,3 @@
-<!-- <?php
-include_once(__DIR__ .'/../backend/products/products.php');
-?> -->
-
 
 <!DOCTYPE html>
 <html lang="en">
