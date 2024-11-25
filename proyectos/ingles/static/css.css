@@ -15,4 +15,6 @@
     display: none;
 }
 
-
+.nav-item:hover{
+    background-color: rgba(50,50,50,0.8);
+}
